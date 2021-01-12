@@ -583,7 +583,7 @@ namespace ImGuiSDL
 						static_cast<int>(drawCommand->ClipRect.z - drawCommand->ClipRect.x),
 						static_cast<int>(drawCommand->ClipRect.w - drawCommand->ClipRect.y)
 				};
-				CurrentDevice->SetClipRect(clipRect);
+				//CurrentDevice->SetClipRect(clipRect); // see https://github.com/Tyyppi77/imgui_sdl/issues/6
 
 				if (drawCommand->UserCallback)
 				{
